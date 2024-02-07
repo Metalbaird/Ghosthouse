@@ -1,8 +1,26 @@
 <html>
 <style>
-	h1 {text-align: center;font-size = 60px}
+	h1 {text-align: center; font-size: 60px}
 	h2 {text-align: center;}
 	body { background-color:  #bfbfbf; }
+	
+	div {
+		background-color: red;
+		animation-name:  boom;
+		animation-duration: 0.5s;
+		animation-iteration-count: 3;
+		text-align: centre;
+		
+		}
+		
+	@keyframes boom {
+		0% {background-color: red;}
+		25% {background-color: yellow;}
+		50% {background-color: red;}
+		75%	{background-color: yellow;}
+		100% {background-color: red;}
+		}
+		
 </style>
 	<head>
 	<title>Ghost House - Boom</title>
@@ -11,12 +29,13 @@
 	<body>
 	<br><br>
 	
-	<h1>BOOM!</h1>
+	<h1><div>BOOM!</div></h1>
 	<br>
 	<br>
 	<h2> As you turn the dial, you hear a familiar click that you've only hear in movies. After the sudden explosion of glass and fire from the screen, you look around the now smoke filled room and collapse.</a></h2>
 	<br>
-	<h2>Game Over! - A Ghoul has apparently boobie-trapped the TV dial, turning you into a lovely medium rare meal for the creatures of the house.</a></h2>
+	<h2>Game Over! - A Ghoul has apparently boobie-trapped the TV dial,
+	turning you into a lovely medium rare meal for the creatures of the house.</a></h2>
 	<br>
 	<h2> <a href="index.html">Try again?</a> </h2>
 	</body>
