@@ -1,0 +1,98 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	div {
+		background: rgb(0,0,0);
+		padding: 10px;
+		}
+		
+		div.first {
+			background: rgba(0,0,0,0.6);
+			}
+
+	body {
+
+		
+	
+	h1 {text-align: center;
+			color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+	
+		background-image: url('../images/cellar.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		background-position: center;
+		back
+		}
+		
+			.button {
+
+		transition-duration: 0.4s;
+		background-color: #300000;
+		border: 1px solid #000000;
+		border-radius: 29px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		color: #B30000;
+		padding: 15px 32px;
+		text-align: center-left;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 61px;
+}
+		.button:hover {
+		background-color: 6D0202; 
+			color: #B20000;
+		}
+	</style>
+	
+	<head>
+	<title>Ghost House - Goldeneye</title>
+	</head>
+	
+	<body><br>
+	<h1 id="h1" style="opacity:0;">You slowly edge towards the glint of golden in the darkness. <br><br> As your hand gets closer, you notice that the golden glint has a small black dot in the middle of the deep gold shine. <br><br>The black dot follows your hand and you realise that it's not a key, but an eye!
+	<br>
+	<br>
+
+	A Wild Ghoul has appeared after you narrowly avoided blinding it!<br> It sure looks mad!<br>
+	<img src="..\images\Cellar Ghoul.png" alt="Gary the Ghoul" width="500" length="500"></img><br>
+	<a href="violence.html" class="button" id="button" id="fade">Fight?</a>
+	<a href="talk.html" class="button" id="button2" id="fade"> Talk? </a>
+
+	<br>
+<a href="index.html">Escape to the Foyer?</a> </h1>
+
+	
+				<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.10
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
+	</body>
+	
+</html>
+	

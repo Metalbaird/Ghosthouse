@@ -1,0 +1,64 @@
+<html>
+<style>
+	body {
+		background-image: url('../images/FoyerBG.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+		
+	h1 {text-align: center;
+	color: #B30000;
+		padding: 5x 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+		
+	h2 {color: #B20000;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+	.link { color: #B30000; }
+	
+	<head>
+	<title>Ghost House - Escape</title>
+	</head>
+	
+	</style>
+
+
+	
+	<body>
+	<br>
+	
+	<h1 id="h1" style="opacity:0;"> You wake up alone in the derelict foyer of a large house.<br>
+	The smell of dust and grime fills your lungs as you stand to your feet.<br>
+	The wallpaper on the walls are peeling, and it looks as if this house has been abandoned for decades.
+	<br> As you look around the room, you notice a door to the outside infront of you. <br>Escape!<br><br>
+	You try the door but it's locked tight.<br> As you look back into the filthy foyer, you notice that there are three rooms with doors open.<br><br>
+	<a href="kitchen.html">A Kitchen.</a><br><a href="livingroom.html">A Livingroom.</a><br><a href="study.html">A Study</a><br><br>
+	<strong><b>You must find the front door key to escape this house!</b></strong></h1>
+		<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
+	</body>
+	
+	
+</html>

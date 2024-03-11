@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<style>
+	body {
+
+		
+	
+	h1 {text-align: center;
+			color: #B30000;
+		padding: 15x 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+	
+		background-image: url('../images/cellar.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		background-position: center;
+		back
+		}
+
+	</style>
+	<head>
+	<title>Ghost House - Cellar</title>
+	</head>
+	
+	<body><br>
+	<h1 id="h1" style="opacity:0;"> 
+	<br> You take a swing at the Ghoul with your bare hands. <br> This does not go well.<br>
+	The Ghoul bites hard onto your arm and you feel the power drain from your body.<br> 
+	You made a delicious meal and the Ghoul has retreated back into their corner.<br><br>
+	Game Over!<br>
+	<center><img src="..\images\violenceghoul.png" alt="Gary the Ghoul" width="500" length="500"></img>
+	<br>
+	<a href="../index.html">Try Again?</a>
+
+	
+				<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
+	</body>
+	
+</!DOCTYPE html>
+	

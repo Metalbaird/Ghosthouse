@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<style>
+	body {
+
+		
+	
+	h1 {text-align: center;
+			color: #B30000;
+		padding: 15x 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+	
+		background-image: url('../images/cellar.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		background-position: center;
+		back
+		}
+
+	</style>
+	<head>
+	<title>Ghost House - Cellar</title>
+	</head>
+	
+	<body><br>
+	<h1 id="h1" style="opacity:0;"> The cellar smells worse than the kitchen,
+	but you can't place where the smell of rot is coming from...
+	<br> In the darkness of a corner you see a slight golden twinkle, 
+	like a lone star in the nights sky. <br> 
+	You also see a hatch used for delivering coal, although the hatch looks damaged.
+	<br>
+	<br>
+	<a href="ghoul.html">Explore the darkness for the shiny object?</a><br>
+	<a href="hatch.html"> Try the damaged cellar hatch?</a><br>
+	<a href="kitchen.html">Screw this, head back to the Kitchen?</a></h1>
+	
+	
+				<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
+	</body>
+	
+</!DOCTYPE html>
+	

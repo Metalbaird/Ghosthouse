@@ -1,0 +1,53 @@
+<html>
+<style>
+body {
+		background-image: url('../images/kitchenbg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+	h1 {text-align: center;
+	color: #B30000;
+		padding: 15x 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+
+	</style>
+	<head>
+	<title>Ghost House - Kitchen</title>
+	</head>
+	
+	<body><br><br>
+	<h1 id="h1" style="opacity:0;"> The kitchen smells of mould and damp, with a slight hint of rotting food coming from a definitely turned off fridge.
+	<br> Through the darkness you can see the light of the moon shining through the window panes of a back door. At the other side of the room is a door leading to the cellar.
+	<br><br>
+	<center> <a href="backdoor.html">Check the back Door?</a><br>
+	<a href="Cellar.html"> Check the cellar for an exit?</a><br>
+	 <a href="index.html">Head back to the foyer?</a> </h1></center>
+	
+	
+	
+			<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
+	</body>
+	
+</html>
+	
