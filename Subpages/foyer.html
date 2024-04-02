@@ -1,5 +1,6 @@
 <html>
 <style>
+
 	body {
 		background-image: url('../images/FoyerBG.jpeg');
 		background-repeat: no-repeat;
@@ -7,9 +8,12 @@
 		background-size: 100% 100%;
 		}
 		
-	h1 {text-align: center;
+h1 {
+	position: absolute;
+	top: 20%;
+	width: 100%;
 	color: #B30000;
-		padding: 5x 32px;
+
 		text-align: center;
 		text-decoration: none;
 		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
@@ -37,9 +41,10 @@
 	The wallpaper on the walls are peeling, and it looks as if this house has been abandoned for decades.
 	<br> As you look around the room, you notice a door to the outside infront of you. <br>Escape!<br><br>
 	You try the door but it's locked tight.<br> As you look back into the filthy foyer, you notice that there are three rooms with doors open.<br><br>
-	<a href="kitchen.html">A Kitchen.</a><br><a href="livingroom.html">A Livingroom.</a><br><a href="study.html">A Study</a><br><br>
+	<a href="kitchen.html">A Kitchen.</a><br><a href="livingroom.html" id="livingroom">A Livingroom.</a><br><a href="study.html" id="study">A Study</a><br><br>
 	<strong><b>You must find the front door key to escape this house!</b></strong></h1>
 		<script type="text/javascript">
+		
 		window.onload = fadeIn;
 		
 		
@@ -58,6 +63,20 @@
 				}, 250);
 			}
 		</script>
+		<script type="text/javascript">
+				
+			var 
+			var livRoomKey = false;
+				if (livRoomKey) {
+				alert("Room Locked! I must find the key!");
+				}
+				else {
+				alert("Livingroom Door Unlocked!");
+				}
+			
+
+				
+				</script>
 	</body>
 	
 	

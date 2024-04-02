@@ -1,19 +1,55 @@
 <html>
 <style>
-	h1 {text-align: center;}
-	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+body {
+		background-image: url('../images/backdoorblockedbg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
 	</style>
 	<head>
 	<title>Ghost House - Shut Tight</title>
 	</head>
 	
 	<body><br>
-	<h1> You get a bit of a run up and launch yourself at the heavy back door. You fall backwards onto the filthy floor looking back up at the door, it mearly shaked when you hit it. <br><br>	You can see that one of the glass panes has broken, with lethaly sharp knives of glass sticking violently outwards. You are relieved you didn't try breaking the glass.</h1>
+	<h1 id="h1" style="opacity:0;"> You get a bit of a run up and launch yourself at the heavy back door.<br>
+	You fall backwards onto the filthy floor looking back up at the door, it mearly shaked when you hit it.
+	<br><br>You can see that one of the glass panes has broken<br>
+	with lethaly sharp knives of glass sticking violently outwards.<br>
+	You are relieved you didn't try breaking the glass.
 	<br>
 	<br>
-	<h2> <a href="kitchen.html">Head back to the kitchen entrance?</a></h2>
-	<h2> <a href="index.html">Head back to the foyer?</a> </h2>
+	<a href="kitchen.html">Head back to the kitchen entrance?</a><br>
+	<a href="foyer.html">Head back to the foyer?</a> </h1>
+	
+						<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

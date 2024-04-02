@@ -1,19 +1,58 @@
 <html>
 <style>
-	h1 {text-align: center;}
-	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+body {
+
+		
+	
+h1 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+	
+		background-image: url('../images/cellar.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		background-position: center;
+		back
+		}
+
 	</style>
 	<head>
 	<title>Ghost House - Hatch</title>
 	</head>
 	
 	<body>
-	<h1> You try to open the hatch, but it won't budge. You hear something shuffling behind you and a rasping moan that sounds both close by, and far away. <br> Is this something in the same room as you? or the floor above?</h1>
+	<h1 id="h1" style="opacity:0;"> You try to open the hatch, but it won't budge. <br>You hear something shuffling behind you and a rasping moan that sounds a bit too close for comfort.<br>
+	<br> Is this something in the same room as you? or the floor above?
 	<br>
 	<br>
-	<h2><a href="Hatchdeath.html"> Keep trying to open the door, the moan sounds far enough away.</a></h2>
-	<h2><a href="Cellar.html">Get out of there as if your life depends on it.</a></h2>
+	<a href="grabbed.html"> Keep trying to open the hatch, the moan sounds far enough away.</a><br>
+	<a href="Cellar.html">Get out of there as if your life depends on it.</a></h1>
+						<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

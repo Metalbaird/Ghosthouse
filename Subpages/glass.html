@@ -2,21 +2,58 @@
 <style>
 	h1 {text-align: center;}
 	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+		body {
+		background-image: url('../images/backdoorblockedbg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
 	</style>
 	<head>
 	<title>Ghost House - Broken Glass</title>
 	</head>
 	
 	<body><br>
-	<h1> You've seen all the movies, you punch through the kitchen door glass in one powerful blow!<br><br> Sadly those movies lie about how hard real glass can be, and you cut your wrist pretty deep.</h1>
+	<h1 id="h1" style="opacity:0;"> You've seen all the movies, you punch through the kitchen door glass in one powerful blow!<br><br> Sadly those movies lie about how hard real glass can be, and you cut your wrist pretty deep.
 	<br>
 	<br>
-	<h2> You feel yourself getting weaker as you sit down on the floor, your back up against the failed escape attempt. You slip into darkness.</h2>
+	You feel yourself getting weaker as you sit down on the floor,<br>
+	your back up against the failed escape attempt.<br>You slip into darkness.
 	<br>
-	<h2>Game Over! - Glass is sharp. You found this out the hard way.</a></h2>
 	<br>
-	<h2> <a href="index.html">Try again?</a> </h2>
+	Game Over!<br> Glass is sharp. You found out the hard way.</a>
+	<br>
+	<br>
+	<a href="../index.html">Try again?</a> </h1>
+	
+					<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

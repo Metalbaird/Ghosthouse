@@ -1,21 +1,54 @@
 <html>
 <style>
-	h1 {text-align: center;}
-	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+body {
+		background-image: url('../images/livingroombg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
 	</style>
 	<head>
 	<title>Ghost House - Living Room</title>
 	</head>
 	
 	<body><br>
-	<h1> The livingroom is dimly lit by an old candle, the scent of dust and grime fills your nostrils.<br> Looking around, you notice an old 1980's style TV with a red standby light on, and a TV remote sitting on a coffee table nearby.<br><br>
-		You also notice a large book case, with many dusty books but something glinting in the candlelight.</h1>
+	<h1> The livingroom is dimly lit by an old candle<br> The scent of dust and grime fills your nostrils.<br> Looking around, you notice an old 1980's style TV with a red standby light on
+	<br> and a TV remote sitting on a coffee table nearby.<br><br>
+	You also notice a large book case, with many dusty books with something glinting in the candlelight.
 	<br>
 	<br>
-	<h2> <a href="tv.html">Check out the TV?</a></h2>
-	<h2><a href="ship.html"> Head to the bookcase?</a></h2>
-	<h2> <a href="index.html">Head back to the foyer?</a> </h2>
+	<a href="tv.html">Check out the TV?</a><br>
+	<a href="ship.html"> Head to the bookcase?</a><br>
+	<a href="foyer.html">Head back to the foyer?</a><br> </h1>
+	
+		<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.15
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

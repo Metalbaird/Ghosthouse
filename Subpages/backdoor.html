@@ -1,20 +1,51 @@
 <html>
 <style>
-	h1 {text-align: center;}
-	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+body {
+		background-image: url('../images/backdoorblockedbg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
 	</style>
 	<head>
 	<title>Ghost House - Back Door</title>
 	</head>
 	
-	<body><br>
-	<h1> The back door feels unnaturally heavy to open. You can see faint light through the muck covered panes of glass. <br></h1>
+	<body><br><br><br>
+	<h1 id="h1" style="opacity:0;"> The back door feels unnaturally heavy to open.<br>You can see faint light through the muck covered panes of glass. <br>
+	
 	<br>
-	<br>
-	<h2><a href="door.html"> Try to break down the door?</a></h2>
-	<h2><a href="glass.html"> Break the kitchen door window glass?</a></h2>
-	<h2> <a href="index.html">Head back to the foyer?</a> </h2>
+	<a href="door.html"> Try to break down the door?</a><br>
+	<a href="glass.html"> Break the kitchen door window glass?</a><br>
+	 <a href="foyer.html">Head back to the foyer?</a> </h1>
+	<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.15
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>
