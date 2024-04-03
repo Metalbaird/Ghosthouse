@@ -1,20 +1,55 @@
 <html>
 <style>
-	h1 {text-align: center;}
-	h2 {text-align: center;}
-		body { background-color:  #bfbfbf; }
+body {
+		background-image: url('../images/livingroombgboom.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 17%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
 	</style>
 	<head>
 	<title>Ghost House - static.html</title>
 	</head>
 	
 	<body><br>
-	<h1> You pick up the remote and turn the TV on without issue, but the TV turns on to white noise and static. <br> The static of the TV gives you a shock as it pierces the silence of the livingroom. <br> You try to turn the TV off, but the remote doesn't respond to your commands. The static is getting louder, and louder, until you can't stand it anymore.<br>
-		You back away to the livingroom door, and as you get there, the TV explodes with glass and shrapnel wizzing past you.<br>Close one!
-		</h1>
+	<h1 id="h1" style="opacity:0;"> You pick up the remote and press power,<br> As the TV turns on, sharp static shows on the screen <br>
+	The sound resonating around the one deathly quiet livingroom. <br>
+	You try to turn the TV off, but the remote doesn't respond to your command.<br>
+	The static is getting louder, and a dull whirring is building to a crescendo!<br>
+		You dash back to the livingroom door, and as you do, the TV explodes with glass and shrapnel wizzing past you.<br>
+		<br>Close one!
 	<br>
-	<h2><a href="ship.html"> Carefully check out the bookcase?</a></h2>
-	<h2> <a href="index.html">Head back to the foyer?</a> </h2>
+	<a href="ship.html"> Carefully check out the bookcase?</a><br>
+	<a href="foyer.html">Head back to the foyer?</a> </h1>
+	
+		<script type="text/javascript">
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.15
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

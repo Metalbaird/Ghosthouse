@@ -1,8 +1,30 @@
 
 <style>
-	h1 {text-align: center; font-size: 60px}
-	h2 {text-align: center;}
-	body { background-color:  #bfbfbf; }
+body {
+		background-image: url('../images/livingroombgboom.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 17%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+		
+h2 {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
 	
 	div {
 	
@@ -10,19 +32,22 @@
 		animation-name:  boom;
 		animation-duration: 0.5s;
 		animation-iteration-count: 3;
-		text-align: centre;
+		text-align: centre;#
+		margin: 50%;
 		
 		}
 		
 	@keyframes boom {
 		0% {background-color: red;}
-		25% {background-color: yellow;}
-		50% {background-color: red;}
+		15% {background-color: yellow;}
+		30% {background-color: red;}
+		45%	{background-color: yellow;}
+		60% {background-color: red;}
 		75%	{background-color: yellow;}
-		100% {background-color: red;}
-		
+		90% {background-color: red;}
+		100%	{background-color: yellow;}
 		}
-		$("h2").delay(1000).show();
+		$("h1").delay(1500).show();
 		
 		
 
@@ -37,39 +62,28 @@
 	
 	<br><br>
 	
-	<h1><div>BOOM!</div></h1>
+	<h1 ><div>BOOM!</div> </h1>
 	<br>
 	<br>
-	<h2 id="h2" style="opacity:0;"> As you turn the dial, you hear a familiar click that you've only hear in movies. After the sudden explosion of glass and fire from the screen, you look around the now smoke filled room and collapse.</a>
-	<br><br>
-	Game Over!<br><br> A Ghoul has apparently boobie-trapped the TV dial,
+	<h2 id="h2" style="opacity:0;">As you turn the dial, you hear sudden clunk.<br>Your vision goes white, your ears have an almighty ringing in them... But this soon fades...<br>
+	<br>
+	Game Over!<br><br> A Ghoul has boobie-trapped the TV,<br>
 	turning you into a lovely meal for the creatures of the house.
 	<br>
 	<br>
-	<button id="deaths"><a href="index.html"> Try Again?</a></button><br><br>
-	Deaths:0<id= "deaths"></h2>
+	<a href="../index.html">Try Again?</a><br><br></h2>
 	
-		<script type="text/javascript">
-		
-		// death counter script
-			var button = document.getElementById("deaths"),
-			count = 0;
-			button.onClick = function() {
-			count += 1;
-			button.innerHTML =  "Deaths: " + count;
-			};
-			
-			
-			//fade in script
-			
+<script type="text/javascript">
 		window.onload = fadeIn;
+		
+		
 		function fadeIn() {
 		var fade = document.getElementById("h2");
 		var opacity = 0;
 		var intervalId = setInterval(function() {
 		
 			if (opacity < 1) {
-				opacity = opacity + 0.05
+				opacity = opacity + 0.15
 				fade.style.opacity = opacity;
 				
 				} else { 
