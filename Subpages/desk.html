@@ -1,6 +1,15 @@
 <html>
 <style>
+body {
 h1 {
+
+.large {
+	font-size: 48px;
+	color: #B30000;
+
+	}
+	
+	
 	position: absolute;
 	top: 25%;
 	width: 100%;
@@ -23,13 +32,34 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You approach the desk and see that as well as the parchment paper on the desk, a drawer is ajar.<br> On the parchment paper, there is a message written in scrawled and messy writing...
-	<br>"ThOsE wHo WrItE mUsT eAt ThIeR wOrDs... <br><br> 
+	<h1 id="h1" style="opacity:0;"> You approach the desk and see that as well as the parchment paper on the desk, a drawer is ajar.<br> On the parchment paper, there is a message written in scrawled and messy writing...
+	<br><br><span class="large">"ThOsE wHo WrItE mUsT eAt ThIeR wOrDs..." </span><br><br> 
 	<br>
 	<br>
-	<a href="paper.html">Write on the paper asking for a key?</a>
-	<a href="drawer.html"> Try to open the drawer?</a>
-	<a href="study.html">Head back to the study?</a></h1>
+	<a href="paper.html">Write on the paper asking for a key?</a><br>
+	<a href="drawer.html"> Try to open the drawer?</a><br>
+	<a href="study.html">Head back to the study?</a></h1><br>
+	
+			<script type="text/javascript">
+		
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>

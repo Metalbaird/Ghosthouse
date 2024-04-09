@@ -14,7 +14,7 @@
 		padding: 15x 32px;
 		text-align: center;
 		text-decoration: none;
-		text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;}
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
 	
 		background-image: url('../images/cellar.jpeg');
 		background-repeat: no-repeat;
@@ -51,9 +51,6 @@
 		
 		window.onload = fadeIn;
 		
-
-		
-		
 		function fadeIn() {
 		var fade = document.getElementById("h1");
 		var opacity = 0;
@@ -68,13 +65,12 @@
 					}
 				}, 250);
 			}
-							
-
+			
 		</script>
+		
 		<script type="text/javascript">
-		localStorage.setItem('livRoomKey', 'Livingroom Key');
-		const livRoomKey = localStorage.getItem('livRoomKey');
-		console.log(livRoomKey);
+		sessionStorage.setItem('livRoomKey', "true");
+		
 		</script>
 	</body>
 	

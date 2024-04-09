@@ -10,7 +10,7 @@
 		
 h1 {
 	position: absolute;
-	top: 20%;
+	top: 10%;
 	width: 100%;
 	color: #B30000;
 
@@ -41,7 +41,7 @@ h1 {
 	The wallpaper on the walls are peeling, and it looks as if this house has been abandoned for decades.
 	<br> As you look around the room, you notice a door to the outside infront of you. <br>Escape!<br><br>
 	You try the door but it's locked tight.<br> As you look back into the filthy foyer, you notice that there are three rooms with doors open.<br><br>
-	<a href="kitchen.html">A Kitchen.</a><br><a href="livingroom.html" id="livingroom">A Livingroom.</a><br><a href="study.html" id="study">A Study</a><br><br>
+	<a href="kitchen.html">A Kitchen.</a><br><a href="locked.html" id="livingroom">A Livingroom.</a><br><a href="studylocked.html" id="study">A Study</a><br><br>
 	<strong><b>You must find the front door key to escape this house!</b></strong></h1>
 		<script type="text/javascript">
 		
@@ -63,21 +63,39 @@ h1 {
 				}, 250);
 			}
 		</script>
-		<script type="text/javascript">
-				
-			var 
-			var livRoomKey = false;
-				if (livRoomKey) {
-				alert("Room Locked! I must find the key!");
-				}
-				else {
-				alert("Livingroom Door Unlocked!");
-				}
-			
 
-				
-				</script>
+	<script type="text/javascript">
+				 
+		function attemptUnlocked (){
+		
+		}
+		</script>
+		
+		
+		<script type="text/javascript">
+		if (sessionStorage.getItem("livRoomKey")){
+			livroomLocked()
+		} else {
+			sessionStorage.setItem('livRoomKey', "false");
+		}
+		
+		function livroomLocked () {
+			if (sessionStorage.getItem("livRoomKey")=="true"){
+				document.getElementById("livingroom").href="livingroom.html";
+			}
+		}
+				if (sessionStorage.getItem("studyKey")){
+			studyLocked()
+		} else {
+			sessionStorage.setItem('studyKey', "false");
+		}
+		
+		function studyLocked () {
+			if (sessionStorage.getItem("studyKey")=="true"){
+				document.getElementById("study").href="study.html";
+			}
+		}
+		</script>
+
 	</body>
-	
-	
 </html>

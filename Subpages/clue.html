@@ -1,16 +1,23 @@
 <html>
 <style>
+body {
 h1 {
+
+.large {
+	font-size: 48px;
+	color: #B30000;
+
+	}
 	position: absolute;
-	top: 25%;
+	top: 5%;
 	width: 100%;
 	color: #B30000;
 
 		text-align: center;
 		text-decoration: none;
-		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+		text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;}
 	
-		background-image: url('../images/cellar.jpeg');
+		background-image: url('../images/brokenbottlebg.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% 100%;
@@ -23,14 +30,42 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You grab the bottle wth haste, and throw it to the ground.
+	<h1 id="h1" style="opacity:0;"> You grab the bottle with haste, and throw it to the ground.
 	<br> As the bottle smashes on the dusty carpet, you can hear dozens of cries of relief from unknown souls and a gust of air whooshes past your face.<br><br>
-		In the shards of glass and the broken surprisingly realitic timber, is a small note. The note reads...<br><br>
-		"Escape thy jail through Study and Cunning
-	<br>
-	You feel this is some sort of clue to where the Key might be!
+		In the shards of glass and the broken and surprisingly realitic timber, is a small note. The note reads...<br><br>
+		<span class="large">"Escape thy jail through Study and Cunning"</span><br><br>
+		A small and ornate key can be seen in the wreckage of the ship.
+	<br><br>
+	With this clue and this key, you feel determined to escape this house, and free those trapped."
 	<br>
 	<a href="foyer.html">Head back to the foyer?</a> </h1>
+	
+				<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
+	
+			<script type="text/javascript">
+				sessionStorage.setItem('studyKey', "true");
+		
+		</script>
 	</body>
 	
 </html>

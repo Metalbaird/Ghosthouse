@@ -1,7 +1,7 @@
 <html>
 <style>
 body {
-		background-image: url('../images/livingroombgboom.jpg');
+		background-image: url('../images/shipbottlebg.jpeg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% 100%;
@@ -14,22 +14,42 @@ h1 {
 
 		text-align: center;
 		text-decoration: none;
-		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+		text-shadow: 0 0 15px black, 0 0 15px black, 0 0 15px black, 0 0 15px black;}
 	</style>
 	<head>
 	<title>Ghost House - Ship</title>
 	</head>
 	
 	<body><br>
-	<h1> You walk towards the bookcase, avoiding the debris of rotten books and rags on the floor.<br> Your attention is caught by a small ship in a bottle, 
-	it's glass rippling in the candlelight.<br> The ship inside the bottle seems strange, as it looks like the ships sails are blowing within the bottle.<br> 
+	<h1 id="h1" style="opacity:0;" You walk towards the bookcase, avoiding the debris of rotten books and rags on the floor.<br> Your attention is caught by a small ship in a bottle, 
+	it's glass rippling in the candlelight.<br> The ship inside the bottle seems strange,<br>it looks like the ships sails are blowing within the bottle.<br> 
 	The flag on this ship is all black, with a golden key brightly adorned in the tiny fabric.<br> Seeing this key brings you hope!
 	
-	<br>
-	<a href="bottle.html"> Open the bottle and try to get the ship out?</a>
-	<a href="clue.html">Smash the bottle? You need this key, quickly</a>
-	<a href="tv.html">Books are for nerds, what's on TV?</a>
-	<a href="../index.html">Head back to the foyer?</a> </h1>
+	<br><br>
+	<a href="bottle.html"> Open the bottle and try to get the ship out?</a><br><br>
+	<a href="clue.html">Smash the bottle? You need this key, quickly</a><br><br>
+	<a href="tv.html">Books are for nerds, what's on TV?</a><br><br>
+	<a href="foyer.html">Head back to the foyer?</a> </h1>
+			<script type="text/javascript">
+		
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+		</script>
 	</body>
 	
 </html>
