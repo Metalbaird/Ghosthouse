@@ -24,7 +24,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You try to open the drawer, and feel it move slightly,
+	<h1 id="h1" style="opacity:0;"> You try to open the drawer, and feel it move slightly,
 	<br>but just as you feel it open it pulls back with unnatural strength.<br> 
 	<br>You continue to pull with all your might on the brass handle, but the drawer won't budge.<br><br>
 	It seems whatever forces are in this home are intent to keep you from the drawer. You hope this isn't important.
@@ -33,6 +33,28 @@ h1 {
 	<br>
 	<a href="desk.html">Seems like this is a dead end. Time to think of something else. Check the desk again?</a></h2>
 	<a href="foyer.html">Or head back to the Study to check the hunting trophies?</a> </h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

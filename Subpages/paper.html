@@ -24,7 +24,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You pick up the old fountain pen and dip it into the inkwell, your hand shakes slightly as you begin to write "Give me the key to escape"  <br> 
+	<h1 id="h1" style="opacity:0;"> You pick up the old fountain pen and dip it into the inkwell, your hand shakes slightly as you begin to write "Give me the key to escape"  <br> 
 	<br>As you finish writing, you feel like something isn't right. <br>
 	You begin to cough and splutter as you feel something fill your throat, and you cough up a small metal key. Another key then follows, and then another.<br><br>
 	Before you know it, you are coughing up key, after key, after key. <br> You collapse, keys flowing out of your mouth like water.
@@ -32,6 +32,28 @@ h1 {
 	Game Over! - A thousand handcuff keys have choked you to death, your body sags the floor with the weight of the keys.
 	<br>
 	<a href="../index.html">Try Again?</a> </h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

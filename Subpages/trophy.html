@@ -24,7 +24,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You walk through the darkness and notice that a Fox head and Stag head are mounted on the deteriorating wall. There is a plaque under each trophy. <br>
+	<h1 id="h1" style="opacity:0;"> You walk through the darkness and notice that a Fox head and Stag head are mounted on the deteriorating wall. There is a plaque under each trophy. <br>
 	Written under the Stag is "The Valiant Stag".<br>
 	The plaque under the Fox reads "The Cunning Fox".
 	<br>Both of the heads are in strangely good condition and both have their mouths open wider than naturally possible. <br>
@@ -34,6 +34,28 @@ h1 {
 	<a href="stag.html">Reach into the Stag to show your bravery?</a>
 	<a href="fox.html"> Reach into the Foxes mouth to show your cunning?</a>
 	<a href="study.html">Head back to the study?</a> </h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

@@ -24,7 +24,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> You sprint back to the foyer and rush to the door. You can feel the haunting power of the shirling shadows around you, trying to claw at your clothes as you run towards the front door.<br><br>
+	<h1 id="h1" style="opacity:0;"> You sprint back to the foyer and rush to the door. You can feel the haunting power of the shirling shadows around you, trying to claw at your clothes as you run towards the front door.<br><br>
 	<br><br> Out of breath and panicking, you get to the front door. You turn the key and hear a mighty "CLICK". The door swings open and you leap out into the fresh air.<br><br> For the first time in hours it feels like you can breath again.
 	<br><br> 
 	
@@ -33,6 +33,27 @@ h1 {
 	Congratulations! <br> You have escaped the haunted house and have made it to the safety of the street!
 	<br>
 	<h1> <a href="../index.html">Fancy playing again?</a> </h1>
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

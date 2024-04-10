@@ -23,7 +23,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> As you pick up the bottle, you see that the ship moves slightly from side to side as if in rough waters. <br> You tightly grab the cork stopper on the bottle and twist.
+	<h1 id="h1" style="opacity:0;"> As you pick up the bottle, you see that the ship moves slightly from side to side as if in rough waters. <br> You tightly grab the cork stopper on the bottle and twist.
 	<br> After a solid minute of grunting and pulling, the cork starts to come away<br><br>
 	As you pull the cork away, you feel strange, as if you're flying through the air at great speed. You close your eyes to stop the gusts of wind from blinding you.
 	<br> With your eyes closed you hear something out of place, waves crash near you and the sounds of seaguls can be heard.
@@ -34,6 +34,28 @@ h1 {
 	Game Over<br><br>You've entered the bottle and have been forced to swab the decks for all eternity.
 	<br>
 	<a href="../index.html">Try again?</a> </h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

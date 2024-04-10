@@ -24,7 +24,7 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1> As you enter the study, you feel a crippling sense of being watched.<br>The dark corners seem to close in on you are you walk to the centre of the room.  <br> 
+	<h1 id="h1" style="opacity:0;"> As you enter the study, you feel a crippling sense of being watched.<br>The dark corners seem to close in on you are you walk to the centre of the room.  <br> 
 	<br>Through the filthy air, you notice an antique desk with a parchment and inkwell,<br>
 	laid out as if it was recently in use. <br> You also notice two oddly preserved hunting trophies, free from any grime and their mouths wide open.<br>
 	From here you can't fully make out what animals they are.
@@ -32,6 +32,28 @@ h1 {
 	<a href="desk.html">Investigate the antique desk?</a><br>
 	<a href="trophy.html"> Step closer to the hunting trophies?</a> <br> 
 	 <a href="foyer.html">Head back to the foyer?</a> </h1> <br>
+	 
+	 				<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
 	</body>
 	
 </html>

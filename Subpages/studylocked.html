@@ -1,0 +1,54 @@
+<html>
+<style>
+body {
+		background-image: url('../images/lockedstudybg.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+h1 {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	color: #B30000;
+
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+	</style>
+	<head>
+	<title>Ghost House - Locked Livingroom</title>
+	</head>
+	
+	<body><br>
+	<h1 id="h1" style="opacity:0;"> You walk towards the entrance to the study<br> The smell of old books wafts through the hinges of the old wooden door.<br>
+		You press your hand on the ornate handle <br>But the door does not budge.<br><br>
+		It seems like you need to find the key before entering this part of the house.<br>
+
+	<a href="foyer.html">Head back to the foyer</a> </h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
+	</body>
+	
+</html>
+	
