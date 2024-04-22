@@ -28,6 +28,9 @@
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> The cellar smells worse than the kitchen,
 	but you can't place where the smell of rot is coming from...
 	<br> In the darkness of a corner you see a slight golden twinkle, 
@@ -40,6 +43,7 @@
 	<a href="kitchen.html">Screw this, head back to the Kitchen?</a>
 	
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -65,6 +69,7 @@
 		</script>
 		
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </!DOCTYPE html>

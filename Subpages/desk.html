@@ -33,6 +33,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You approach the desk and see that as well as the parchment paper on the desk, a drawer is ajar.<br> On the parchment paper, there is a message written in scrawled and messy writing...
 	<br><br><span class="large">"ThOsE wHo WrItE mUsT eAt ThIeR wOrDs..." </span><br><br> 
 	<br>
@@ -42,6 +45,7 @@ h1 {
 	<a href="study.html">Head back to the study?</a><br>
 	
 	<br><br>
+	<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -66,6 +70,7 @@ h1 {
 			}
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

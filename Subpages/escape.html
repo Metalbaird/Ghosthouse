@@ -24,6 +24,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You sprint back to the foyer and rush to the door.<br>You can feel the haunting power of the shirling shadows around you.<br>Shadows claw at your clothes as you run towards the front door.<br><br>
 	Out of breath and panicking, you get to the front door.<br>You turn the key and hear a mighty "CLICK".<br>The door swings open and you leap out into the fresh air.<br><br> You turn to see the mass of shadows stop, and then explode with a banshee's wail!<br> You see Gary the Ghoul leap through the dissipating shadows<br>and sprint into the darkness of the night.<br> I'm sure this won't come back to haunt you...<br> But, you are free!<br> For the first time in hours it feels like you can breath again.
 	<br>
@@ -32,7 +35,8 @@ h1 {
 	
 	Total Deaths:<span id="deathCount"></span><br>
 	<br>
-	<a href="../index.html" id="resetGameLink">Fancy playing again?</a> </h1>
+	<a href="../index.html" id="resetGameLink">Fancy playing again?</a> <br>
+	<button id="muteButton">Unmute</button><br><br></h1>
 					<script type="text/javascript">
 
 		
@@ -55,6 +59,7 @@ h1 {
 			
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 		
 	</body>
 	

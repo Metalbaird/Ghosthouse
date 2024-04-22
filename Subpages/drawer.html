@@ -31,6 +31,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3"type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You try to open the drawer, and feel it move slightly
 	<br>but just as you feel it open it pulls back with unnatural strength.<br> 
 	<br>You hear an almighty scream from the drawer.<br><br>
@@ -44,6 +47,7 @@ h1 {
 	<a href="study.html">See what's up with the hunting trophys?</a>
 	
 	<br><br>
+	<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -69,6 +73,7 @@ h1 {
 			
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

@@ -24,6 +24,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You walk through the darkness<br>You notice that a Fox head and Stag head are mounted on the deteriorating wall.<br> There is a plaque under each trophy. <br><br>
 	Written under the Stag is "The Valiant Stag".<br><br>
 	The plaque under the Fox reads "The Cunning Fox".<br>
@@ -36,6 +39,7 @@ h1 {
 	<a href="study.html">Head back to the study?</a>
 	
 	<br><br>
+	<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -61,6 +65,7 @@ h1 {
 			
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

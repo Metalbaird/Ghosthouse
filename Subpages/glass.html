@@ -22,6 +22,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You've seen all the movies, you punch through the kitchen door glass in one powerful blow!<br><br> Sadly those movies lie about how hard real glass can be, and you cut your wrist pretty deep.
 	<br>
 	<br>
@@ -34,6 +37,7 @@ h1 {
 	<br>
 	<a href="../index.html" id="tryAgainLink">Try again?</a>
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -57,6 +61,7 @@ h1 {
 			}
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

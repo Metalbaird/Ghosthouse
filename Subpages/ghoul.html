@@ -63,6 +63,9 @@
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;">You slowly edge towards the glint of golden in the darkness.
 	<br><br> As your hand gets closer, you notice that the golden glint has a small black dot in the middle of the deep gold shine.
 	<br><br>The black dot follows your hand and you realise that it's not a key, but an eye!
@@ -77,6 +80,7 @@
 	<br>
 <a href="foyer.html">Escape to the Foyer?</a>
 	<br><br>
+	<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 
@@ -101,6 +105,7 @@
 			}
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

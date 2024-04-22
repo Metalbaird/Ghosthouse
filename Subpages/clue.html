@@ -30,6 +30,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You grab the bottle with haste, and throw it to the ground.
 	<br> As the bottle smashes on the dusty carpet,<br>You hear dozens of cries of relief from unknown souls and a gust of air whooshes past your face.<br><br>
 		In the shards of glass and the broken and surprisingly realitic timber, is a small note. The note reads...<br><br>
@@ -40,6 +43,7 @@ h1 {
 	<br><br>
 	<a href="foyer.html">Head back to the foyer?</a>	
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -70,6 +74,7 @@ h1 {
 		
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

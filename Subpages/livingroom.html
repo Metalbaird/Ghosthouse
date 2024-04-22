@@ -21,6 +21,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> The livingroom is dimly lit by a musty lamp in the corner.<br> The scent of dust and grime fills your nostrils.<br> Looking around, you notice a derelict looking 80's style TV with a red standby light on.
 	<br> A TV remote sits on a coffee table nearby.<br><br>
 	You can also see a large book case, with many dusty books with something glinting in the candlelight.
@@ -31,6 +34,7 @@ h1 {
 	<a href="foyer.html">Head back to the foyer?</a><br>
 	
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -54,6 +58,7 @@ h1 {
 			}
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

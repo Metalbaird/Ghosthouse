@@ -24,6 +24,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> You pick up the old fountain pen and dip it into the inkwell, your hand shakes slightly as you begin to write<br>"Give me the key to escape"  <br> 
 	<br>As you finish writing, you feel like something isn't right. <br>
 	You begin to cough and splutter as you feel something fill your throat<br>You cough up a small metal key.<br>And another<br> And another...<br><br>
@@ -33,6 +36,7 @@ h1 {
 	<br><br>
 	<a href="../index.html" id="tryAgainLink">Try Again?
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -62,6 +66,7 @@ h1 {
 			
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

@@ -24,6 +24,9 @@ h1 {
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;"> As you enter the study, you feel a crippling sense of being watched.<br>The dark corners seem to close in on you are you walk to the centre of the room.  <br> 
 	<br>Through the filthy air, you notice an antique desk with a parchment and inkwell,<br>
 	laid out as if it was recently in use. <br> You also notice two oddly preserved hunting trophies, free from any grime and their mouths wide open.<br>
@@ -34,6 +37,7 @@ h1 {
 	 <a href="foyer.html">Head back to the foyer?</a> <br>
 	 
 	 	<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	 
@@ -59,6 +63,7 @@ h1 {
 			
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>

@@ -59,7 +59,9 @@ h2 {
 
 	
 	<body>
-	
+		<audio id="bgMusic" autoplay loop>
+        <source src="..\media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<br><br>
 	
 	<h1><div>BOOM!</div> </h1>
@@ -74,6 +76,7 @@ h2 {
 	<a href="../index.html" id="tryAgainLink">Try Again?</a><br><br>
 	
 		<br><br>
+		<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 	
@@ -98,5 +101,6 @@ h2 {
 		</script>
 		
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	 

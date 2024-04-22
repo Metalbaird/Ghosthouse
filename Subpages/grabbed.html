@@ -63,6 +63,9 @@
 	</head>
 	
 	<body><br>
+		<audio id="bgMusic" autoplay loop>
+        <source src="media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
 	<h1 id="h1" style="opacity:0;">As you batter at the hatch, you feel pressure on your shoulder<br>
 	<br><br> You quickly turn to see a large GHOUL towering over you!
 	<br><br>The GHOUL steps back and glares at you, with golden eyes that pierce your very soul.
@@ -77,6 +80,7 @@
 <a href="foyer.html">Escape to the Foyer?</a>
 
 	<br><br>
+	<button id="muteButton">Unmute</button><br><br>
 	
 	Death Count:<span id="deathCount"></span></h1>
 
@@ -101,6 +105,7 @@
 			}
 		</script>
 		<script src="deathCount.js"></script>
+		<script src="..\bgmusic.js"></script>
 	</body>
 	
 </html>
