@@ -42,7 +42,9 @@ h1 {
 	<br> As you look around the room, you notice a door to the outside infront of you. <br>Escape!<br><br>
 	You try the door but it's locked tight.<br> As you look back into the filthy foyer, you notice that there are three rooms with doors open.<br><br>
 	<a href="kitchen.html">A Kitchen.</a><br><a href="locked.html" id="livingroom">A Livingroom.</a><br><a href="studylocked.html" id="study">A Study</a><br><br>
-	<strong><b>You must find the front door key to escape this house!</b></strong></h1>
+	<strong><b>You must find the front door key to escape this house!</b></strong><br><br>
+	
+	Death Count:<span id="deathCount"></span></h1>
 		<script type="text/javascript">
 		
 		window.onload = fadeIn;
@@ -96,6 +98,8 @@ h1 {
 			}
 		}
 		</script>
+		
+		<script src="deathCount.js"></script>
 
 	</body>
 </html>

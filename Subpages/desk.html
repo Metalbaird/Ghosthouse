@@ -12,7 +12,7 @@ h1 {
 	
 	
 	position: absolute;
-	top: 25%;
+	top: 10%;
 	width: 100%;
 	color: #B30000;
 
@@ -39,7 +39,11 @@ h1 {
 	<br>
 	<a href="paper.html">Write on the paper asking for a key?</a><br>
 	<a href="drawer.html"> Try to open the drawer?</a><br>
-	<a href="study.html">Head back to the study?</a></h1><br>
+	<a href="study.html">Head back to the study?</a><br>
+	
+	<br><br>
+	
+	Death Count:<span id="deathCount"></span></h1>
 	
 			<script type="text/javascript">
 		
@@ -52,7 +56,7 @@ h1 {
 		var intervalId = setInterval(function() {
 		
 			if (opacity < 1) {
-				opacity = opacity + 0.05
+				opacity = opacity + 0.10
 				fade.style.opacity = opacity;
 				
 				} else { 
@@ -61,6 +65,7 @@ h1 {
 				}, 250);
 			}
 		</script>
+		<script src="deathCount.js"></script>
 	</body>
 	
 </html>

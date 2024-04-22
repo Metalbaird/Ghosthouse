@@ -3,15 +3,15 @@
 body {
 h1 {
 	position: absolute;
-	top: 25%;
+	top: 10%;
 	width: 100%;
 	color: #B30000;
 
 		text-align: center;
 		text-decoration: none;
-		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+		text-shadow: 0 10 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;}
 	
-		background-image: url('../images/cellar.jpeg');
+		background-image: url('../images/paperbg.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% 100%;
@@ -24,14 +24,21 @@ h1 {
 	</head>
 	
 	<body><br>
-	<h1 id="h1" style="opacity:0;"> You pick up the old fountain pen and dip it into the inkwell, your hand shakes slightly as you begin to write "Give me the key to escape"  <br> 
+	<h1 id="h1" style="opacity:0;"> You pick up the old fountain pen and dip it into the inkwell, your hand shakes slightly as you begin to write<br>"Give me the key to escape"  <br> 
 	<br>As you finish writing, you feel like something isn't right. <br>
-	You begin to cough and splutter as you feel something fill your throat, and you cough up a small metal key. Another key then follows, and then another.<br><br>
+	You begin to cough and splutter as you feel something fill your throat<br>You cough up a small metal key.<br>And another<br> And another...<br><br>
 	Before you know it, you are coughing up key, after key, after key. <br> You collapse, keys flowing out of your mouth like water.
-	<br>
-	Game Over! - A thousand handcuff keys have choked you to death, your body sags the floor with the weight of the keys.
-	<br>
-	<a href="../index.html">Try Again?</a> </h1>
+	<br><br>
+	Game Over!<br><br>A thousand keys have choked you to death<br>Your body sags the floor with the weight of the keys.
+	<br><br>
+	<a href="../index.html" id="tryAgainLink">Try Again?
+		<br><br>
+	
+	Death Count:<span id="deathCount"></span></h1>
+	
+	<br><br>
+	
+	Death Count:<span id="deathCount"></span></h1>
 	
 					<script type="text/javascript">
 
@@ -54,6 +61,7 @@ h1 {
 			}
 			
 		</script>
+		<script src="deathCount.js"></script>
 	</body>
 	
 </html>

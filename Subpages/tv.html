@@ -28,7 +28,34 @@ h1 {
 	<br><br>
 	<a href="remote.html">Turn on the TV with the remote?</a><br>
 	<a href="boom.html"> Turn on the TV manually with the dial?</a><br>
-	<a href="livingroom.html">Check the rest of the livingroom</a> </h1>
+	<a href="livingroom.html">Check the rest of the livingroom</a> 
+	
+	<br><br>
+	
+	Death Count:<span id="deathCount"></span></h1>
+	
+					<script type="text/javascript">
+
+		
+		window.onload = fadeIn;
+		
+		function fadeIn() {
+		var fade = document.getElementById("h1");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+		</script>
+		<script src="deathCount.js"></script>
 	</body>
 	
 </html>
