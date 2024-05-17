@@ -1,0 +1,123 @@
+<html>
+<style>
+
+	body {
+		background-image: url('images/Haunted mansion BG2.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+
+	h1 {text-align: center;
+		font-size: 60px; 
+		
+		color: #B30000;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 1px 1px #0F0B0C
+		
+		
+	
+	}
+	h2 {text-align: center;
+	color: #B30000;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;}
+		
+	
+	}
+	body { background-color:  #bfbfbf; }
+	
+	.button {
+
+		transition-duration: 0.4s;
+		background-color: #300000;
+		border: 1px solid #000000;
+		border-radius: 29px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		color: #B30000;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-family: 'Jolly Lodger';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 61px;
+}
+		.button:hover {
+		background-color: 6D0202;
+			color: #B20000;
+		}
+
+
+	
+	<head>
+	<title>Ghost House - Escape</title>
+	</head>
+	
+	</style>
+
+	<body>
+	
+	<audio id="bgMusic" autoplay loop>
+        <source src="media\bgmusic.mp3" type="audio/mpeg">
+		</audio>
+	
+	<br>
+	
+	<h1> A Haunted Escape</h1>
+	
+	<h2 id="fade" style="opacity:0;"> The night is dark, the road is long, and it has been a longer day <br>
+		You are walking home and feeling on edge.<br>
+		You pass the old abandoned mansion at the end of the road<br>
+		Countless horror stories come from that place.<br>
+		Lights flicker...<br>
+		Thunderous thuds are heard..<br>
+		the house shakes with disembodied screams...<br><br>
+		You try to put those stories out of your head as you walk past,<br>
+		but suddenly you feel yourself slipping into a deep sleep.<br>
+		Each step you take weighs heavier on your mind, and your vision goes to black...
+		
+	<center><a href="Subpages\foyer.html" class="button" id="button" id="fade">Awaken</a></center>
+	Death Count:<span id="deathCount"></span>
+	<br><br>
+	<button id="muteButton">mute</button><br><br>
+	An escape adventure by Calum Baird</h2>
+
+		<script type="text/javascript">
+		
+		window.onload = fadeIn;
+		
+		
+		function fadeIn() {
+		
+		var fade = document.getElementById("fade");
+		var opacity = 0;
+		var intervalId = setInterval(function() {
+		
+			if (opacity < 1) {
+				opacity = opacity + 0.05
+				fade.style.opacity = opacity;
+				
+				} else { 
+					clearInterval(intervalId);
+					}
+				}, 250);
+			}
+			
+</script>
+
+
+<script src="Subpages\deathCount.js"></script>
+<script src="bgmusic.js"></script>
+	</body>
+
+	
+</html>
